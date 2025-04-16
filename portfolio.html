@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rithwik Srivastav - DevOps Engineer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Dark Mode Toggle
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      const mode = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+      localStorage.setItem('theme', mode);
+    }
+
+    // Persist theme across sessions
+    window.onload = function() {
+      if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark-mode');
+      }
+    };
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Rithwik Srivastav</h1>
+      <button onclick="toggleDarkMode()" id="darkModeToggle">Toggle Dark Mode</button>
+    </div>
+  </header>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Highly motivated and detail-oriented DevOps Engineer and Cloud Engineer with hands-on experience in deploying, managing, and scaling applications on AWS and Azure. Proficient in automating infrastructure, CI/CD pipelines, and managing cloud environments to ensure high availability, performance, and security.</p>
+    </section>
+
+    <section id="tech-stack">
+      <h2>Tech Stack</h2>
+      <ul>
+        <li>AWS</li>
+        <li>Azure</li>
+        <li>Terraform</li>
+        <li>Docker</li>
+        <li>Kubernetes</li>
+        <li>GitHub Actions</li>
+        <li>Azure DevOps</li>
+        <li>Python</li>
+        <li>Bash</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><a href="https://github.com/rithwiksrivastav4/terraform" target="_blank">Multi-Cloud Infrastructure Automation with Terraform</a></li>
+        <li><a href="https://github.com/rithwiksrivastav4/kubernetes" target="_blank">Microservices Deployment on Kubernetes</a></li>
+        <li><a href="https://github.com/rithwiksrivastav4/Docker" target="_blank">Containerization with Docker</a></li>
+        <li><a href="https://github.com/rithwiksrivastav4/ansible" target="_blank">Automation with Ansible</a></li>
+        <li><a href="https://github.com/rithwiksrivastav4/" target="_blank">CI/CD & Quality Control</a></li>
+        <li><a href="https://github.com/rithwiksrivastav4/python" target="_blank">Python Mini-Apps</a></li>
+      </ul>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <ul>
+        <li>VCube Internship Certification</li>
+        <li>DevOps Certification – IHub Institute</li>
+        <li>AWS Certified Solutions Architect – IHub Institute</li>
+        <li>Azure Certified Solutions Architect – IHub Institute</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Feel free to connect with me!</p>
+      <ul>
+        <li><a href="https://github.com/rithwiksrivastav4" target="_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/rithwik-srivastav/" target="_blank">LinkedIn</a></li>
+        <li><a href="mailto:rithwik@example.com">Email</a></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
